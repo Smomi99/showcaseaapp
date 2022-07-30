@@ -1,0 +1,9 @@
+.showcase {
+  background: linear-gradient(93.6deg, #c478f8 0%, #367cfc 100%);
+}
+
+@media only screen and (max-width: 600px) {
+  .display {
+    display: none;
+  }
+}

@@ -1,0 +1,9 @@
+.sidebar {
+  overflow: hidden;
+}
+.fixed-content {
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  display: none !important;
+}
