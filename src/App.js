@@ -1,14 +1,17 @@
-import React from 'react';
-import Header from './components/Header/Header';
-import MainBody from './components/MainBody/MainBody';
-
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Home/Home";
+import SignIn from "./components/SignIn/SignIn";
+import SignUp from "./components/SignUp/SignUp";
 function App() {
-
   return (
-    <div className='flex flex-col'>
-      <Header/>
-      <MainBody/>
-      </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

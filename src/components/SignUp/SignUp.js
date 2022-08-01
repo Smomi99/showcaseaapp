@@ -9,7 +9,7 @@ import CreateAds from "../steps/CreateAds";
 import Details from "../steps/Details";
 import Final from "../steps/Final";
 import Payment from "../steps/Payment";
-const LoginPage = () => {
+const SignUp = () => {
   const [currentStep, setCurrentStep] = useState(1);
 
   const steps = ["", "", "", "", "", ""];
@@ -56,12 +56,14 @@ const LoginPage = () => {
           </div>
         </nav>
       </div>
-      <div className="mt-8 mb-4 text-md text-center font-semibold ">
+      <div className="  text-md text-center font-semibold ">
         <h1>Welcome to Showcase 👋</h1>
-        <h1 className="text-gray-500 w-full  p-4">Create an account and start showcasing your <br />
-services to your local audience looking for talented pros!</h1>
+        <h1 className="text-gray-500 w-full  p-4">
+          Create an account and start showcasing your <br />
+          services to your local audience looking for talented pros!
+        </h1>
       </div>
-      <div className="mx-auto rounded-2xl bg-white pb-2 drop-shadow-2xl md:w-1/2">
+      <div className="mx-auto rounded-2xl bg-white pb-2 drop-shadow-2xl w-1/2">
         {/* Stepper */}
         <div className="horizontal container mt-5 ">
           <Stepper steps={steps} currentStep={currentStep} />
@@ -86,4 +88,4 @@ services to your local audience looking for talented pros!</h1>
   );
 };
 
-export default LoginPage;
+export default SignUp;

@@ -1,5 +1,5 @@
 import React from "react";
-import plus from '../../assets/plus.png';
+import plus from "../../assets/plus.png";
 import { useStepperContext } from "../../contexts/StepperContext";
 const CreateAds = () => {
   const { userData, setUserData } = useStepperContext();
@@ -75,23 +75,29 @@ const CreateAds = () => {
                 <div class="flex items-center justify-start w-full">
                   <label class="flex flex-col w-24 h-18 hover:bg-gray-100 hover:border-gray-300">
                     <div class="flex flex-col items-center justify-center pt-7">
-                     <img src={plus} alt="" />
-  
+                      <img src={plus} alt="" />
                     </div>
                     <input type="file" class="opacity-0" />
                   </label>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
       </div>
       <div className="textarea mt-4 mb-2">
-
-      <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Description</label>
-<textarea id="message" rows="4" class="block h-64 p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your message..."></textarea>
-
+        <label
+          for="message"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+        >
+          Description
+        </label>
+        <textarea
+          id="message"
+          rows="4"
+          class="block h-64 p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Your message..."
+        ></textarea>
       </div>
       <div className="grid grid-cols-2 gap-4 ">
         <div className="mx-2 w-full flex-1">
@@ -134,7 +140,6 @@ const CreateAds = () => {
             </div>
           </div>
         </div>
-       
       </div>
     </div>
   );
